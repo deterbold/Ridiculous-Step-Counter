@@ -13,6 +13,7 @@
 		42DC149F24AF4AAA00CBD1C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DC149D24AF4AAA00CBD1C1 /* Main.storyboard */; };
 		42DC14A124AF4AAD00CBD1C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DC14A024AF4AAD00CBD1C1 /* Assets.xcassets */; };
 		42DC14A424AF4AAD00CBD1C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DC14A224AF4AAD00CBD1C1 /* LaunchScreen.storyboard */; };
+		42DC14AE24AF4DD100CBD1C1 /* StupidStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC14AD24AF4DD100CBD1C1 /* StupidStepViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		42DC14A024AF4AAD00CBD1C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42DC14A324AF4AAD00CBD1C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42DC14A524AF4AAD00CBD1C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42DC14AD24AF4DD100CBD1C1 /* StupidStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StupidStepViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,10 @@
 		42DC149624AF4AAA00CBD1C1 /* Ridiculous Step Counter */ = {
 			isa = PBXGroup;
 			children = (
+				42DC14AD24AF4DD100CBD1C1 /* StupidStepViewController.swift */,
+				42DC149B24AF4AAA00CBD1C1 /* ViewController.swift */,
 				42DC149724AF4AAA00CBD1C1 /* AppDelegate.swift */,
 				42DC149924AF4AAA00CBD1C1 /* SceneDelegate.swift */,
-				42DC149B24AF4AAA00CBD1C1 /* ViewController.swift */,
 				42DC149D24AF4AAA00CBD1C1 /* Main.storyboard */,
 				42DC14A024AF4AAD00CBD1C1 /* Assets.xcassets */,
 				42DC14A224AF4AAD00CBD1C1 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42DC149C24AF4AAA00CBD1C1 /* ViewController.swift in Sources */,
+				42DC14AE24AF4DD100CBD1C1 /* StupidStepViewController.swift in Sources */,
 				42DC149824AF4AAA00CBD1C1 /* AppDelegate.swift in Sources */,
 				42DC149A24AF4AAA00CBD1C1 /* SceneDelegate.swift in Sources */,
 			);
@@ -294,7 +298,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "software.ridiculous.Ridiculous-Step-Counter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "software.ridiculous.Ridiculous-Step-Counter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

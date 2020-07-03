@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L5c-WL-TRr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,91 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ridiculous_Step_Counter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+        <!--Stupid Step View Controller-->
+        <scene sceneID="euC-Bf-71W">
+            <objects>
+                <viewController id="L5c-WL-TRr" customClass="StupidStepViewController" customModule="Ridiculous_Step_Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H4y-cP-0VD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEPS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZs-AJ-dDG">
+                                <rect key="frame" x="144" y="169" width="126" height="111"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="s9O-Y2-Q1b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WALKING?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18d-zT-C35">
+                                <rect key="frame" x="144" y="347" width="126" height="64"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Gbf-UN-bSz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEBUG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ab3-yQ-0yG">
+                                <rect key="frame" x="57" y="467" width="300" height="199"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iz3-aG-Rsn">
+                                <rect key="frame" x="154" y="723" width="107" height="57"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="Pgc-HQ-eQC"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="RESET"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="18d-zT-C35" firstAttribute="top" secondItem="IZs-AJ-dDG" secondAttribute="bottom" constant="67" id="5GW-h2-q4F"/>
+                            <constraint firstItem="IZs-AJ-dDG" firstAttribute="trailing" secondItem="18d-zT-C35" secondAttribute="trailing" id="I85-fR-irH"/>
+                            <constraint firstItem="ab3-yQ-0yG" firstAttribute="centerX" secondItem="iz3-aG-Rsn" secondAttribute="centerX" id="Ieq-0Y-rT5"/>
+                            <constraint firstItem="IZs-AJ-dDG" firstAttribute="leading" secondItem="18d-zT-C35" secondAttribute="leading" id="Mxc-dL-3xF"/>
+                            <constraint firstItem="ab3-yQ-0yG" firstAttribute="leading" secondItem="tGc-to-Ota" secondAttribute="leading" constant="57" id="dRe-ze-6cj"/>
+                            <constraint firstItem="18d-zT-C35" firstAttribute="centerX" secondItem="ab3-yQ-0yG" secondAttribute="centerX" id="diK-GS-rVL"/>
+                            <constraint firstItem="IZs-AJ-dDG" firstAttribute="leading" secondItem="tGc-to-Ota" secondAttribute="leading" constant="144" id="fR1-hj-GNr"/>
+                            <constraint firstItem="IZs-AJ-dDG" firstAttribute="top" secondItem="tGc-to-Ota" secondAttribute="top" constant="125" id="fdF-Ya-7js"/>
+                            <constraint firstItem="ab3-yQ-0yG" firstAttribute="top" secondItem="18d-zT-C35" secondAttribute="bottom" constant="56" id="kk2-Zg-GhX"/>
+                            <constraint firstItem="iz3-aG-Rsn" firstAttribute="top" secondItem="ab3-yQ-0yG" secondAttribute="bottom" constant="57" id="nGG-Tm-oPr"/>
+                            <constraint firstItem="IZs-AJ-dDG" firstAttribute="centerX" secondItem="H4y-cP-0VD" secondAttribute="centerX" id="pIm-PK-fMl"/>
+                            <constraint firstItem="iz3-aG-Rsn" firstAttribute="leading" secondItem="tGc-to-Ota" secondAttribute="leading" constant="154" id="ym8-2G-ivP"/>
+                            <constraint firstItem="tGc-to-Ota" firstAttribute="bottom" secondItem="iz3-aG-Rsn" secondAttribute="bottom" constant="82" id="zXD-ze-chg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tGc-to-Ota"/>
+                    </view>
+                    <connections>
+                        <outlet property="debugLabel" destination="ab3-yQ-0yG" id="C7u-vy-xqb"/>
+                        <outlet property="resetButton" destination="iz3-aG-Rsn" id="x1R-gP-1UG"/>
+                        <outlet property="stepsLabels" destination="IZs-AJ-dDG" id="sCt-yR-fo2"/>
+                        <outlet property="walkingStatusLabel" destination="18d-zT-C35" id="KuM-p8-6jT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ljh-4Y-whq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298.5507246376812" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>
